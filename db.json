@@ -17,7 +17,7 @@
     {
       "id": 1,
       "age": 36,
-      "name": "Renee Herman",
+      "name": "Levi Gonzales",
       "email": "reneeherman@qualitex.com",
       "friends": [
         {
@@ -96,28 +96,6 @@
       ]
     },
     {
-      "id": 7,
-      "age": 33,
-      "name": "Hanson Collins",
-      "email": "hansoncollins@qualitex.com",
-      "friends": [
-        {
-          "id": 5
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "age": 21,
-      "name": "Walton York",
-      "email": "waltonyork@qualitex.com",
-      "friends": [
-        {
-          "id": 5
-        }
-      ]
-    },
-    {
       "id": 9,
       "age": 38,
       "name": "Walter Manning",
@@ -147,6 +125,20 @@
       "name": "Indigo Montoya",
       "age": 31,
       "email": "indigomontoya@gmail.com",
+      "friends": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Indigo Montoya",
+      "age": 29,
+      "email": "indigomontyoa@gmail.com",
       "friends": [
         {
           "id": 1

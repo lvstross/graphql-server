@@ -13,6 +13,20 @@ export const typeDefs = gql`
 	type Query {
 		users: [User]
 	}
+
+	input CreateUserInput {
+		id: Int
+		name: String
+		age: Int
+		email: String
+		friends: [Int]
+	}
+
+	type Mutation {
+		createUser(input: CreateUserInput!): User
+		updateUser(id: Int!, input: CreateUserInput!): User
+		deleteUser(id: Int!): User
+	}
 `;
 
 export const resolvers = {
@@ -20,6 +34,17 @@ export const resolvers = {
 		users() {
 			return userModel.list();
 		}
+	},
+	Mutation: {
+		createUser(source, args) {
+			return userModel.create(args.input);
+		},
+		updateUser(source, args){
+			return userModel.update(args.id, args.input);
+		},
+		deleteUser(source, args){
+			return userModel.delete(args.id);
+		},
 	},
 	User: {
 		friends(source) {
