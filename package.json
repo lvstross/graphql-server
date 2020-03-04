@@ -16,7 +16,8 @@
     "axios": "^0.19.0",
     "express": "^4.17.1",
     "graphql": "^14.5.8",
-    "json-server": "^0.15.1"
+    "json-server": "^0.15.1",
+    "merge-graphql-schemas": "^1.7.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
